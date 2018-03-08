@@ -68,7 +68,7 @@
 
             </FrameLayout>
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
@@ -92,7 +92,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/staryellow"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/comentario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/commentborder"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin_left="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/corazon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heartgreen"
+                        android:layout_toLeftOf="@+id/comentario"/>
+                    <ImageView
+                        android:id="@+id/ojo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eyeborder"
+                        android:layout_toLeftOf="@id/corazon"/>
+
+                </RelativeLayout>
             </LinearLayout>
+
         </LinearLayout>
 
 
