@@ -9,23 +9,42 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:layout_margin="10dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@drawable/borde_principal"
         android:elevation="10dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/postre1"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:padding="5dp"/>
+
+
+        </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:background="@color/colorAccent"/>
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_gravity="center_vertical"
+                />
         <View
             android:layout_width="100dp"
             android:layout_height="10dp"
-            android:background="@drawable/borde_load_blue"/>
+            android:background="@drawable/borde_load_green"/>
 
         </FrameLayout>
 
