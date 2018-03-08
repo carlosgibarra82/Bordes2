@@ -26,27 +26,76 @@
                 android:src="@drawable/postre1"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                android:elevation="5dp"/>
 
 
         </LinearLayout>
-
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@android:color/darker_gray"
-                android:layout_gravity="center_vertical"
-                />
-        <View
-            android:layout_width="100dp"
-            android:layout_height="10dp"
-            android:background="@drawable/borde_load_green"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        </FrameLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkedgreen"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THE OXFORD"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/borde_load_green"/>
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/staryellow"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/staryellow"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/staryellow"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/staryellow"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/staryellow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
 
         </LinearLayout>
 
