@@ -15,7 +15,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
         android:background="@drawable/borde_principal"
         android:elevation="10dp"
@@ -30,13 +30,12 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/postre1"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FFFFFF"
                 android:padding="5dp"
-                android:elevation="5dp"/>
-
-
+                android:elevation="3dp"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -106,7 +105,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"/>
+                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"/>
 
                     <ImageView
                         android:id="@+id/corazon"
@@ -131,7 +131,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
         android:background="@drawable/borde_principal"
         android:elevation="10dp"
@@ -146,34 +146,38 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/postre2"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FFFFFF"
                 android:padding="5dp"
-                android:elevation="5dp"
-                android:background="@drawable/borde_principal"/>
+                android:elevation="3dp" />
 
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="3">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MADRAS CAFE"/>
+                    android:text="MADRAS CAFE"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"/>
 
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
 
                 <View
                     android:layout_width="match_parent"
@@ -183,13 +187,15 @@
                 <View
                     android:layout_width="100dp"
                     android:layout_height="10dp"
-                    android:background="@drawable/borde_load_green"/>
+                    android:background="@drawable/borde_load_green"
+                    android:layout_gravity="center_vertical"/>
 
             </FrameLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -221,7 +227,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"/>
+                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"/>
 
                     <ImageView
                         android:id="@+id/corazon1"
