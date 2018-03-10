@@ -22,13 +22,13 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center_vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/postre1"
                 app:civ_border_width="1dp"
                 app:civ_border_color="#FFFFFF"
@@ -55,6 +55,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="THE OXFORD"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
                     android:layout_gravity="center_vertical"/>
 
             </LinearLayout>
@@ -67,7 +69,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="@android:color/darker_gray"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    />
             </FrameLayout>
 
             <LinearLayout
@@ -106,7 +110,7 @@
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
                         android:layout_margin_left="5dp"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginRight="15dp"/>
 
                     <ImageView
                         android:id="@+id/corazon"
@@ -125,26 +129,23 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
         android:layout_margin="10dp"
         android:background="@drawable/borde_principal"
-        android:elevation="10dp"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center_vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/postre2"
                 app:civ_border_width="1dp"
                 app:civ_border_color="#FFFFFF"
@@ -159,7 +160,7 @@
             android:orientation="vertical"
             android:weightSum="3">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -169,10 +170,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="MADRAS CAFE"
-                    android:textSize="12dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"/>
 
-            </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/min"/>
+
+                <TextView
+                    android:id="@+id/min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="min"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -183,7 +207,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="@android:color/darker_gray"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"/>
                 <View
                     android:layout_width="100dp"
                     android:layout_height="10dp"
@@ -195,6 +220,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1">
 
                 <ImageView
@@ -219,22 +245,23 @@
                     android:src="@drawable/staryellow"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
 
                     <ImageView
                         android:id="@+id/comentario1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/commentborder"
+                        android:src="@drawable/commentgreen"
                         android:layout_alignParentRight="true"
                         android:layout_margin_left="5dp"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginRight="15dp"/>
 
                     <ImageView
                         android:id="@+id/corazon1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/heartgreen"
+                        android:src="@drawable/heartborder"
                         android:layout_toLeftOf="@+id/comentario1"/>
                     <ImageView
                         android:id="@+id/ojo1"
