@@ -25,7 +25,7 @@
     android:layout_height="match_parent">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -133,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginRight="15dp"/>
 
                     <ImageView
@@ -278,7 +278,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentgreen"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginRight="15dp"/>
 
                     <ImageView
@@ -426,7 +426,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginRight="15dp"/>
 
                     <ImageView
@@ -574,7 +574,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginRight="15dp"/>
 
                     <ImageView
@@ -722,7 +722,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/commentborder"
                         android:layout_alignParentRight="true"
-                        android:layout_margin_left="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginRight="15dp"/>
 
                     <ImageView
